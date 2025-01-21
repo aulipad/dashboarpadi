@@ -33,15 +33,15 @@
     <div class="bg-white p-4 shadow rounded">
         <h2 class="text-lg font-semibold mb-4">Diagram Infografis</h2>
         <!-- <canvas id="chart" class="w-full h-80"></canvas> -->
-        <!-- <h2 style="text-align: center;">Data produksi padi per kecamatan</h2> -->
+        <!-- <h2 style="text-align: center;">Total Suara Partai per Kabupaten/Kota</h2> -->
         <canvas id="stackedBarChart" width="800" height="600"></canvas>
     </div>
 
     <script>
-        // Labels untuk sumbu X (KECAMATAN)
+        // Labels untuk sumbu X (Kabupaten/Kota)
         const labels = ["2019", "2020", "2021", "2022", "2023"];
     
-        // Data produksi padi per kecamatan
+        // Data suara partai per kabupaten/kota
         const dataPartai = {
             "DARMA": [6914,6228,7140,6517,5277],
             "KADUGEDE": [8952,7474,7837,7404,7512],
@@ -153,7 +153,7 @@
 
 <!-- Tabel -->
 <div class="container mx-auto mt-6 bg-white p-4 shadow rounded">
-    <h2 class="text-lg font-semibold mb-4">Data Tabel</h2>
+    <h2 class="text-lg font-semibold mb-4">Tabel Produksi Padi Kabupaten Kuningan</h2>
     <div class="overflow-y-auto h-80 border rounded"> <!-- Kontainer dengan scroll -->
       <table class="table-auto w-full border">
         <thead class="bg-white-200">
