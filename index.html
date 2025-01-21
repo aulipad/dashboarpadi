@@ -34,14 +34,12 @@
         <h2 class="text-lg font-semibold mb-4">Diagram Infografis</h2>
         <!-- <canvas id="chart" class="w-full h-80"></canvas> -->
         <!-- <h2 style="text-align: center;">Data produksi padi per kecamatan</h2> -->
-        <canvas id="stackedBarChart" width="800" height="400"></canvas>
+        <canvas id="stackedBarChart" width="800" height="600"></canvas>
     </div>
 
     <script>
         // Labels untuk sumbu X (KECAMATAN)
-        const labels = ["DARMA", "KADUGEDE", "NUSAHERANG", "CINIRU", "HANTARA", "SELAJAMBE", "SUBANG", "CILEBAK", "CIWARU", "KARANGKANCANA","CIBINGBIN", "CIBEUREUM", 
-        "LURAGUNG", "CIMAHI", "CIDAHU","KALIMANGGIS","CIAWIGEBANG","CIPICUNG","LEBAKWANGI","MALEBER","GARAWANGI","SINDANGAGUNG",
-        "KUNINGAN","CIGUGUR","KRAMATMULYA","JALAKSANA","JAPARA","CILIMUS","CIGANDAMEKAR","MANDIRANCAN","PANCALANG","PASAWAHAN"];
+        const labels = ["2019", "2020", "2021", "2022", "2023"];
     
         // Data produksi padi per kecamatan
         const dataPartai = {
@@ -115,7 +113,6 @@
            "PASAWAHAN":"pink"
         };
     
-
         // Menyiapkan dataset
         const datasets = Object.keys(dataPartai).map(partai => ({
             label: partai,
